@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-layout {
+    width: 100%;
+    background-color: blue;
+}
+
+#sidebar {
+    height: 100vh; 
+    width: 15%;
+    background-color: #333;    
+    float: left;
+    border-right: 4px solid #ccc;
+    border-bottom: 4px solid #ccc;  
+}
+
+#leftpart {
+    height: 100vh; 
+    width: 85%;
+    background-color: #1e1e1e;
+    float: right;
+}
+#searchbar{
+    height: 150px;
+    width: 100%;
+    background-color: #1e1e1e;
+    border-right: 4px solid #ccc;
+    border-bottom: 4px solid #ccc;
+}
+.projects{
+    float: left;
+    height: 100vh;
+    width: 50%;
+}
+.projects h2 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 50px;
+}
+.card {
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    height: 250px;
+    width: 450px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2d2d2d;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border-left: 8px solid #8b5cf6;
+}
+.card h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+  
+}
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.rightpart{
+    height: 80.15%;
+    background-color: #1e1e1e;
+    float: right;
+    width: 30%;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon {
+    margin-right: 16px;
+    font-size: 16px;
+    width: 24px;  
+    height: 24px; 
+
+}
+.icon1 {
+    font-size: 16px;
+    width: 24px;  
+    height: 24px;
+}
+.search-bar {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 90px;
+     
+}
+.search-input {
+    padding: 6px;
+    border: 1px solid #ccc; 
+    border-radius: 10px 10px 10px 10px; 
+    outline: none; 
+    width: 600px; 
+    margin-left: 10px;
+    background-color: #555;
+}
+.main-content {
+    flex-grow: 1; 
+    background-color: #f9f9f9;  
+}
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    color: white; 
+    background-color: #1e1e1e;
+}
+.header1 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    color: white; 
+    background-color: #1e1e1e;
+    border-bottom: 4px solid #ccc;
+    width: 100%;
+}
+
+.header-buttons {
+    margin-top: 10px;
+    display: flex; 
+}
+
+.header-buttons button:hover {
+    background-color: #777;
+}
+.content-area {
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #fff;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.icon3 {
+    margin-right: 16px;
+    width: 70px;  
+    height: 70px; 
+    margin-left: 100px;
+
+}
+.header-buttons button {
+    tab-size: 10px;
+    background-color: #666; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px;
+    margin-left: 10px; 
+    cursor: pointer; 
+    transition: background 0.3s;
+    border-radius: 5px; 
+}
+.projects h2 {
+    color: white;
+
+}
+.announcements h2{
+    color: white;
+}
+.card1 {
+    margin-left: 10px;
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2d2d2d;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.card h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+  
+}
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+  
+.person:last-child {
+    margin-bottom: 0;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6b7280;
+}
+.people h2 {
+    color: white;
+}
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    padding: 2rem 1.5rem;
+  }
+  
+  .sidebar h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .sidebar a {
+    color: #d1d5db;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .sidebar a.active {
+    color: #a78bfa;
+  }
+  .mainpart{
+    width: 100%;
+    display: flex;;
+  }
+  
